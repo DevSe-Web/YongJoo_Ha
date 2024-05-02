@@ -20,12 +20,13 @@ ul{
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 0px;
-    width: 16%;
+    top: 0;
+    flex: 1;
     height: 100%;
-    padding: 15px;
+    padding: 0 1em;
     background-color: white;
     box-shadow: 15px 0px 5px -13px gray;
+    
 }
 .profile{
     display: flex;
@@ -54,7 +55,6 @@ ul{
     box-shadow: 0px 0px 6px 0px gray;
     width: 17em;
     height: 4em;
-    margin: 15px auto; /*수평정렬*/
     
 }
 .sidebar_ul{
