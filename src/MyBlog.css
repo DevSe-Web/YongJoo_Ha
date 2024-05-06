@@ -19,20 +19,32 @@ ul{
 .leftVar{
     display: flex;
     flex-direction: column;
-    position: sticky;
+    position: fixed;
+    overflow-y:auto;
     top: 0;
     flex: 1;
     height: 100%;
     padding: 0 1em;
     background-color: white;
     box-shadow: 15px 0px 5px -13px gray;
-    
+}
+.leftVar::-webkit-scrollbar{
+    /* 스크롤바 없애기 */
+    display: none;
+}
+.leftVar a{
+    text-decoration: none;
+    /* color 안주면 보라색으로 바뀜 */
+    color: rgba(0, 0, 0, 0.5);
 }
 .profile{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+}
+.profile img{
+    border-radius: 50px;
 }
 .myname{
     display: flex;
@@ -83,7 +95,6 @@ ul{
 .category img{
     opacity: 0.4;
 }
-/* 여기서부터 시작 */
 .hori{ 
     display: flex;
     margin-bottom: 5px;
@@ -99,6 +110,7 @@ ul{
     display: flex;
     font-size: 16px;
     align-items: center;
+    margin: 5px 0px 5px 0px;
 }
 .text img{
     width: 2em;
@@ -111,13 +123,97 @@ ul{
 .main{
     display: flex;
     flex-direction: column;
-    width: 84%;
+    width: 100%;
     height: 100%;
-    /*background-color: cadetblue;*/
+    /* leftvar postion:fixed 속성때문에 margin-left값을 줌
+    이 값이 없으면 leftvar 밑에 겹쳐서 보임 */
+    margin-left: 19em; 
 }
+
+/* ------------------------MAIN_Header----------------------------- */
 .header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1em 6em
+}
+.main_menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    font-size: 17px;
+}
+.mh_bname{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: -7em;
+}
+.mh_bname img{
+    margin-left: 0.5em;
+}
+.mh_icon{
+    width: 2em;
+}
+
+/* ------------------------MAIN_Who am I?----------------------------- */
+.introduce_M{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+}
+.intr_picture{
+    
+}
+.intr_picture img{
+    width: 13em;
+    height: 15em;
+    border-radius: 50%;
+}
+.intr_information{
+    width: 60%;
+    height: auto;
+}
+
+/* ------------------------MAIN_What I use----------------------------- */
+.uselanguage{
+    padding: 3em;
+}
+.introduce_L{
+    padding: 1em;
+    font-size: 5em;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background-color: antiquewhite;*/
+    flex: 1;
+}
+.use{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3em 0em;
+    justify-items: center;
+    align-content: center;
+    height: auto;
+}
+.use .item{
+    border-radius: 2em;
+    height: 13em;
+    width: 13em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 6px 0px gray;
+}
+.item img{
+    width: 7em;
+    height: 7em;
+}
+.item span{
+    margin: 10px;
+    font-size: 1.5em;
 }
