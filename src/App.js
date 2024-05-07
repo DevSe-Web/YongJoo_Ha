@@ -27,7 +27,10 @@ import javascript_icon from './image/javascript_icon.png'
 
 import './MyBlog.css'
 
+
 function App() {
+
+
     return (
         <div style={{ display: 'flex' }}>
             {/* leftVar */}
@@ -76,7 +79,7 @@ function App() {
                 <ul>
                     {/* 전체보기(ROOT) */}
                     <li className="root">
-                        <a href="#">ROOT</a>
+                        ROOT
                     </li>
 
                     <hr />
@@ -231,65 +234,43 @@ function App() {
                         </div>
 
                         <div className='item'>
-                        <img src={css_icon} alt='CSS'></img>
+                            <img src={css_icon} alt='CSS'></img>
                             <span>CSS</span>
                         </div>
 
                         <div className='item'>
-                        <img src={javascript_icon} alt='Javascript'></img>
+                            <img src={javascript_icon} alt='Javascript'></img>
                             <span>Javascript</span>
                         </div>
 
                         <div className='item'>
-                        <img src={java_icon} alt='Java'></img>
+                            <img src={java_icon} alt='Java'></img>
                             <span>Java</span>
                         </div>
 
                         <div className='item'>
-                        <img src={react_icon} alt='React'></img>
+                            <img src={react_icon} alt='React'></img>
                             <span>React</span>
                         </div>
 
                         <div className='item'>
-                        <img src={sql_icon} alt='Oracle SQL'></img>
+                            <img src={sql_icon} alt='Oracle SQL'></img>
                             <span>Oracle SQL</span>
                         </div>
 
                         <div className='item'>
-                        <img src={android_icon} alt='Android Studio'></img>
+                            <img src={android_icon} alt='Android Studio'></img>
                             <span>Android Studio</span>
                         </div>
 
                         <div className='item'>
-                        <img src={vsc_icon} alt='VSCode'></img>
+                            <img src={vsc_icon} alt='VSCode'></img>
                             <span>VSCode</span>
                         </div>
 
                         <div className='item'>
-                        <img src={intellij_icon} alt='IntelliJ'></img>
+                            <img src={intellij_icon} alt='IntelliJ'></img>
                             <span>IntelliJ</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                {/* <!-- 최신 글 --> */}
-                <div>
-                    <div>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div>
-                        <div>
-
-                        </div>
-                        <div>
-
-                        </div>
-                        <div>
-
                         </div>
                     </div>
                 </div>

@@ -171,7 +171,7 @@ ul{
 .intr_picture img{
     width: 13em;
     height: 15em;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 .intr_information{
     width: 60%;
